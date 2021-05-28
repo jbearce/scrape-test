@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home - Scrape Test Site</title>
+    <meta name="description"
+        content="Welcome to Scrape Test! This is a website hosted on Github Pages that is a test for a private web scraper script." />
+    <link rel="stylesheet" href="assets/styles/modern.css" />
+</head>
+
+<body>
+
+    <header class="row row__header">
+        <section class="logo__container col col__header col__header--logo">
+            <img class="logo__image" src="assets/media/logo.png" alt="logo" />
+        </section>
+        <section class="navigation__container col col__header col__header--navigation">
+            <ul class="navigation__menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.htm">About</a></li>
+                <li class="menu-item"><a href="what-is-a-scraper.htm">What is a Scraper?</a></li>
+                <li class="menu-item"><a href="why-scrape.htm">Why Scrape?</a></li>
+                <li class="menu-item"><a href="how-to-scrape.htm">How to Scrape</a></li>
+            </ul>
+        </section>
+        <section class="social__wrapper col col__header col__header--social">
+            <a href="#" title="Just a dummy!">
+                <img class="icon icon--social" alt="facebook" src="assets/media/github.svg" />
+            </a>
+            <a href="#" title="Just a dummy!">
+                <img class="icon icon--social" alt="youtube" src="assets/media/youtube.svg" />
+            </a>
+            <a href="#" title="Just a dummy!">
+                <img class="icon icon--social" alt="twitter" src="assets/media/twitter.svg" />
+            </a>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="container user-content">
+            <h1>How to Scrape</h1>
+            <p>
+                You can scrape a website using any programming language that has the ability to support downloading files from the internet. Some languages may make that easier, especially if you have access to a library that lets you parse the DOM instead of trying to manipulate the raw text of the site.
+            </p>
+            <p>
+                I can't link any here (as that would defeat the purpose of this website), but the tutorial I initially followed to create my demo scraper was on FreeCodeCamp. if you search <code>The Ultimate Guide to Web Scraping with Node.js</code> you should find the same tutorial I did from August 2018 by Daniel Ni.
+            </p>
+            <p>
+                If you do follow that tutorial, please note that Wikipedia has changed their site structure since that was made, meaning you will need to update your selectors to get links to president's pages. You also would do well to read up on how promises work in JS. If you create/return a value within a promise (ex: "thing().then(HERE)"), you will get a promise, rather than the value of that object. You must either initialize the variable outside of the promise and return that, or do all of the logic within the <code>.then()</code>.
+            </p>
+            <p>
+                As stated on the <code>About</code> page, this site is intended for private use. As such, while I'm trying to make this information accurate from memory, I've made no great effort to ensure accuracy of everything. Don't rely on this information, but feel free to use it to refine your searches and aid the development of your own tools.
+            </p>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
